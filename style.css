@@ -1,6 +1,29 @@
 * {
     margin: 0;
 }
+html {
+    direction: rtl;
+}
 .container {
-    width: 50%;
+    background-color: #000;
+}
+.container header {
+    padding: 10px 0;
+}
+.container header .logo {
+    width: 100px;
+    margin: auto;
+}
+.container header .alarm {
+    width: 40px;
+}
+.container header .logo img,
+.container header .alarm img {
+    width: 100%;
+}
+
+@media (min-width: 720px){
+    .container {
+        width: 720px;
+     }
 }
