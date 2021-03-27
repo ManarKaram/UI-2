@@ -1,3 +1,6 @@
+:root {
+    --dark-grey: #424744;
+}
 * {
     margin: 0;
 }
@@ -6,9 +9,11 @@ html {
 }
 .container {
     background-color: #000;
+    padding-left: 0;
+    padding-right: 0;
 }
 .container header {
-    padding: 10px 0;
+    padding:20px 10px;
 }
 .container header .logo {
     width: 100px;
@@ -21,6 +26,22 @@ html {
 .container header .alarm img {
     width: 100%;
 }
+/* nav section */
+nav {
+    background-color: var(--dark-grey);
+    color: #fff;
+    padding: 0 10px;
+}
+nav .item {
+    padding: 10px;
+}
+.container-scroll {
+    overflow-x: auto;
+    background-color: var(--dark-grey);
+  }
+  .container-scroll > .row {
+    width: 133.33333333%; /* = 100% * 4/3 */
+  }
 
 @media (min-width: 720px){
     .container {
