@@ -1,5 +1,6 @@
 :root {
     --dark-grey: #424744;
+    --light-grey: #ededed;
 }
 * {
     margin: 0;
@@ -7,23 +8,30 @@
 html {
     direction: rtl;
 }
-.container {
+.row {
+    padding: 0;
+    margin: 0;
+}
+/* .col {
+    padding: 0 !important;
+} */
+.container  {
     background-color: #000;
     padding-left: 0;
     padding-right: 0;
 }
-.container header {
+.container  header {
     padding:20px 10px;
 }
-.container header .logo {
+.container  header .logo {
     width: 100px;
     margin: auto;
 }
-.container header .alarm {
+.container  header .alarm {
     width: 40px;
 }
-.container header .logo img,
-.container header .alarm img {
+.container  header .logo img,
+.container  header .alarm img {
     width: 100%;
 }
 /* nav section */
@@ -38,13 +46,38 @@ nav .item {
 .container-scroll {
     overflow-x: auto;
     background-color: var(--dark-grey);
-  }
-  .container-scroll > .row {
+}
+.container-scroll > .row {
     width: 133.33333333%; /* = 100% * 4/3 */
-  }
+}
+/* mani section */
+main.page1 {
+    margin-top: 20px;
+    position: relative;
+}
+main.page1 .banner {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+main.page1 .notification {
+    background-color: var(--light-grey);
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    /* top: 0;
+    right: 0;
+    left: 0; */
+    margin: auto;
+}
 
 @media (min-width: 720px){
-    .container {
+    .container  {
         width: 720px;
      }
 }
