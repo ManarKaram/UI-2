@@ -30,13 +30,21 @@ html {
 /* header section */
 .container  header {
     padding:20px 10px;
+    position: relative;
+    height: 100px;
 }
 .container  header .logo {
-    width: 100px;
+    width: 130px;
     margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .container  header .alarm {
-    width: 40px;
+    width: 60px;
+    position: absolute;
+    top: 30%;
+    margin: auto;
 }
 .container  header .logo img,
 .container  header .alarm img {
