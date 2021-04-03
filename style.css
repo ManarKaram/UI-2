@@ -94,17 +94,34 @@ main.page1 .cover .notification {
     text-align: left;
     padding: 5px 15px;
 }
-
+/* nav tabs section */
 main.page1 .match {
     color: #fff;
     padding: 10px;
 }
-main.page1 .separator{
-    border-top:2px solid var(--yellow);
-    position:relative;
+main.page1 .match .nav-tabs {
+    border-bottom:2px solid var(--yellow);
 }
+main.page1 .match .nav-tabs .nav-link {
+    color: #fff;
+    border: none;
+}
+main.page1 .match .nav-tabs .nav-link.active {
+    color: var(--yellow);
+    background-color: unset;
+    border: none;
+    
+}
+main.page1 .match .nav-tabs .nav-link.active:after {
+    content: "";
+    position: relative;
+    top: 1px;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent var(--yellow) transparent;
+  }
 
-main.page1 .separator:after{
+/* main.page1 .separator:after{
     content: '';
     position: absolute;
     top: -10px;
@@ -114,7 +131,7 @@ main.page1 .separator:after{
     border-style: solid;
     border-width: 0 10px 10px 10px;
     border-color: transparent transparent var(--yellow) transparent;
-}
+} */
 main.page1 .title {
     padding: 20px 0 40px 0;
 }

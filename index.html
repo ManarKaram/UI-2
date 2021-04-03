@@ -60,7 +60,29 @@
                     debitis.</div>
             </div>
             <div class="row text-center match bk-grey">
-                <div class="col col-4">
+                <nav>
+                    <div class="nav nav-tabs d-flex justify-content-around" id="nav-tab" role="tablist">
+                        <button class="nav-link" id="nav-yesturday-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-yesturday" type="button" role="tab" aria-controls="nav-yesturday"
+                            aria-selected="true">
+                            <div>الامس</div>
+                            <div>29 Sep</div>
+                        </button>
+                        <button class="nav-link active" id="nav-today-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-today" type="button" role="tab" aria-controls="nav-today"
+                            aria-selected="false">
+                            <div>اليوم</div>
+                            <div>30 Sep</div>
+                        </button>
+                        <button class="nav-link" id="nav-tomorrow-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-tomorrow" type="button" role="tab" aria-controls="nav-tomorrow"
+                            aria-selected="false">
+                            <div>غدا</div>
+                            <div>31 Sep</div>
+                        </button>
+                    </div>
+                </nav>
+                <!-- <div class="col col-4">
                     <div>الامس</div>
                     <div>29 Sep</div>
                 </div>
@@ -71,38 +93,106 @@
                 <div class="col col-4">
                     <div>غدا</div>
                     <div>31 Sep</div>
-                </div>
+                </div> -->
             </div>
-            <div class="row bk-grey">
+            <!-- <div class="row bk-grey">
                 <div class="col col-11 separator m-auto"></div>
-            </div>
-            <div class="row title text-center yellow bk-grey">
-                <div class="col col-12">
-                    بطوله الامم الافريقيه
+            </div> -->
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane" id="nav-yesturday" role="tabpanel" aria-labelledby="nav-yesturday-tab">
+                    <div class="row title text-center yellow bk-grey">
+                        yesturday tab
+                        <!-- <div class="col col-12">
+                            بطوله الامم الافريقيه
+                        </div> -->
+                    </div>
+                    <!-- <div class="row players text-center bk-grey">
+                        <div class="col col-4">
+                            <img src="./images/flag-egy.png">
+                            <div>مصر</div>
+                        </div>
+                        <div class="col col-4 info">
+                            <div class="start"><i class="fas fa-circle"></i> لم تبدأ</div>
+                            <div class="time yellow">08:00 PM</div>
+                        </div>
+                        <div class="col col-4">
+                            <img src="./images/flag-egy.png">
+                            <div>مصر</div>
+                        </div>
+                    </div>
+                    <div class="row staduim bk-grey">
+                        <div class="col col-6">يعرض علي OSN</div>
+                        <div class="col col-6">الاستاد القاهره</div>
+                        <div class="col-11 border-sparator mt-4"></div>
+                    </div>
+                    <div class="row text-center bk-grey all">
+                        <div class="col col-12 yellow">
+                            عرض كل البطولات
+                        </div>
+                    </div> -->
                 </div>
-            </div>
-            <div class="row players text-center bk-grey">
-                <div class="col col-4">
-                    <img src="./images/flag-egy.png">
-                    <div>مصر</div>
+                <div class="tab-pane show active" id="nav-today" role="tabpanel" aria-labelledby="nav-today-tab">
+                    <div class="row title text-center yellow bk-grey">
+                        <div class="col col-12">
+                            بطوله الامم الافريقيه
+                        </div>
+                    </div>
+                    <div class="row players text-center bk-grey">
+                        <div class="col col-4">
+                            <img src="./images/flag-egy.png">
+                            <div>مصر</div>
+                        </div>
+                        <div class="col col-4 info">
+                            <div class="start"><i class="fas fa-circle"></i> لم تبدأ</div>
+                            <div class="time yellow">08:00 PM</div>
+                        </div>
+                        <div class="col col-4">
+                            <img src="./images/flag-egy.png">
+                            <div>مصر</div>
+                        </div>
+                    </div>
+                    <div class="row staduim bk-grey">
+                        <div class="col col-6">يعرض علي OSN</div>
+                        <div class="col col-6">الاستاد القاهره</div>
+                        <div class="col-11 border-sparator mt-4"></div>
+                    </div>
+                    <div class="row text-center bk-grey all">
+                        <div class="col col-12 yellow">
+                            عرض كل البطولات
+                        </div>
+                    </div>
                 </div>
-                <div class="col col-4 info">
-                    <div class="start"><i class="fas fa-circle"></i> لم تبدأ</div>
-                    <div class="time yellow">08:00 PM</div>
-                </div>
-                <div class="col col-4">
-                    <img src="./images/flag-egy.png">
-                    <div>مصر</div>
-                </div>
-            </div>
-            <div class="row staduim bk-grey">
-                <div class="col col-6">يعرض علي OSN</div>
-                <div class="col col-6">الاستاد القاهره</div>
-                <div class="col-11 border-sparator mt-4"></div>
-            </div>
-            <div class="row text-center bk-grey all">
-                <div class="col col-12 yellow">
-                    عرض كل البطولات
+                <div class="tab-pane show" id="nav-tomorrow" role="tabpanel" aria-labelledby="nav-tomorrow-tab">
+                    <div class="row title text-center yellow bk-grey">
+                        Tomorrow tab
+                        <!-- <div class="col col-12">
+                            بطوله الامم الافريقيه
+                        </div> -->
+                    </div>
+                    <!-- <div class="row players text-center bk-grey">
+                        <div class="col col-4">
+                            <img src="./images/flag-egy.png">
+                            <div>مصر</div>
+                        </div>
+                        <div class="col col-4 info">
+                            <div class="start"><i class="fas fa-circle"></i> لم تبدأ</div>
+                            <div class="time yellow">08:00 PM</div>
+                        </div>
+                        <div class="col col-4">
+                            <img src="./images/flag-egy.png">
+                            <div>مصر</div>
+                        </div>
+                    </div>
+                    <div class="row staduim bk-grey">
+                        <div class="col col-6">يعرض علي OSN</div>
+                        <div class="col col-6">الاستاد القاهره</div>
+                        <div class="col-11 border-sparator mt-4"></div>
+                    </div>
+                    <div class="row text-center bk-grey all">
+                        <div class="col col-12 yellow">
+                            عرض كل البطولات
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </main>
