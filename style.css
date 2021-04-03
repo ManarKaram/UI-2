@@ -202,6 +202,7 @@ main.page2 .carousel .item {
     color: #fff;
     border-radius: 7px;
     padding: 10px 5px 10px 0;
+    margin: 0 5px;
 }
 main.page2 .carousel .item .logo {
     width: 80px;
