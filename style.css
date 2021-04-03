@@ -56,8 +56,24 @@ nav {
     color: #fff;
     padding: 0 10px;
 }
+nav ul {
+    list-style: none;
+}
 nav .item {
     padding: 10px;
+}
+nav .item.nav-link::after {
+    display: none;
+}
+nav ul li ul.dropdown-menu {
+    /* transform: translate3d(160px, 164px, 0px) !important; */
+    background-color: #000;
+    
+}
+nav ul li ul.dropdown-menu li a {
+    color: #fff;
+    font-size: 12px;
+    text-align: initial;
 }
 .container-scroll {
     overflow-x: auto;
@@ -312,9 +328,4 @@ body ::-webkit-scrollbar-thumb {
     div {
         font-size: 14px;
     }
-}
-@media (min-width: 720px){
-    .container  {
-        width: 720px;
-     }
 }
